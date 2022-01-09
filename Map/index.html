@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Google Maps Example</title>
+    <style type="text/css">
+        body {
+            font: normal 14px Verdana;
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+        
+        h2 {
+            font-size: 18px;
+        }
+        
+        #sidebar {
+            float: right;
+            width: 30%;
+        }
+        
+        #main {
+            padding-right: 15px;
+        }
+        
+        .infoWindow {
+            width: 220px;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQeG4w9yKqxxZhmlRZROdUZSw4HexMTtw&callback=initMap" type="text/javascript"></script>
+    <script type="text/javascript">
+        < div id = 'map' >
+            function init() {
+                var addressesArray = ['Peelamedu, Coimbatore']
+                var map = new google.maps.Map(document.getElementById('map_canvas'), {
+                    center: {
+                        lat: 11.100787,
+                        lng: 77.378051
+                    },
+                    zoom: 6,
+                    gestureHandling: 'cooperative'
+                });
+                var geocoder = new google.maps.Geocoder();
+                for (i = 0; i < addressArray.length; i++) {
+                    var address = addressArray[i];
+                    geocoder.geocode({
+                        'address': address
+                    }, function(results, status) {
+                        if (status === 'OK') {
+                            var marker = new google.maps.Marker({
+                                map: map,
+                                position: results[0].geometry.location,
+                                center: {
+                                    lat: 12.7826,
+                                    lng: 105.0282
+                                },
+                            });
+                        } else {
+                            alert('Geocode was not successful for the following reason: ' + status);
+                        }
+                    });
+                }
+            } <
+            /div>
+    </script>
+
+    <body>
+
+        <body onload="init();">
+
+            <h1>SAMPLE</h1>
+            <section id="main">
+                <div id="map_canvas" style="width: 70%; height: 500px;"></div>
+            </section>
+        </body>
+
+</html>

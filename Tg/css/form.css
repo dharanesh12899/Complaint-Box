@@ -1,0 +1,60 @@
+.box 
+{
+   border-style: solid;
+   border-width: 0px 0px 1px 0px;
+   border-color: #5bc0de;
+}  
+.colo
+{
+   color: #5bc0de;
+   font-weight: bold;
+}
+
+.prog img {
+   width: 40px;
+   margin: auto;
+   margin-bottom: 5px;
+}
+
+ul
+{
+   text-align: center;
+}
+
+ul li
+{
+   display: inline-block;
+   width: 200px;
+   position: relative;
+}
+
+ul li .fas
+{
+   background: lightgray;
+   width: 18px;
+   height: 17px;
+   color: black;
+   border-radius: 8px;
+}
+
+ul li .fas::after
+{
+  content: '';
+  background:lightgray;
+  height: 5px;
+  width: 205px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  margin-top: -10px;
+  z-index: -1;
+}
+
+#two
+      {
+         display: none;
+      }
+
+
+
+

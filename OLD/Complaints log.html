@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complaints Log</title>
+
+<link rel="stylesheet" href="../Users/dharanesh/Documents/css/bootstrap.css">
+<style>
+body{
+  background-color: rgb(33,31,35);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-5 {
+  border: 2px solid #5d4e65;   
+  min-height: 300px;
+  padding: 1.25em;
+  width:100%;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  
+  
+}
+.grid-1-5:hover {
+  background-color: rgb(83,69,91);  
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 15px 50px 2px rgba(50, 50, 50, 1);
+  transform: scale(1.025);
+  z-index: 2;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  background-color:black;
+  opacity:0.7;
+  box-shadow: 0px 0px 15px black;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+p {
+  font-size: 0.875em;  
+}
+p, ul {
+  margin:0 0 1.5em
+}
+ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0 0 0.8333333333333333em;
+  }
+}
+.button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+.button:hover
+{
+  background-color:red;
+  box-shadow: 0px 0px 15px black;
+}
+.uppercase, .button, h2 {
+  text-transform: uppercase;
+}
+	</style>
+</head>
+<body>
+	<nav> <img src = "logo.jpg" class="img-rounded" style = "height:50px;width:50px">
+	  <div class="container" style = "background-color:transparent;width:100%;border:1px solid red">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      
+      <a class="navbar-brand" href="#">Home</a>
+       <a class="navbar-brand" href="#">Logout</a>
+        </div>
+  </div>
+</nav>
+<div class="container" style =" width:100%">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="carousel1" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
+            <li data-target="#carousel1" data-slide-to="1" class=""> </li>
+            <li data-target="#carousel1" data-slide-to="2" class=""> </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item"> <img class="img-responsive" src=comp.jpg style = "height:500px;width:1920px" alt="thumb">
+              <div class="carousel-caption"><h2><b>Log Your area complaints here with detailed descriptions.</b></h2></div>
+            </div>
+            <div class="item active"> <img class="img-responsive" src="work.jpg" style = "height:500px;width:1920px" alt="thumb">
+              <div class="carousel-caption"><h2><b>Your Complaints will be processed at the maximum speed possible. </b></h2> </div>
+            </div>
+            <div class="item"> <img class="img-responsive" src="flag.jpg" style = "height:500px;width:1920px" alt="thumb">
+				<div class="carousel-caption"> <h2><b>To Know more about us, contact us</h2></b> </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel1" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel1" data-slide="next"><span class="icon-next"></span></a></div>
+      </div>
+</div>
+    <hr>
+    <center><h2 style = "text-shadow:0px 0px 15px gray">Selcect The Related Department Yoy Want to Log a Complaint!!</h2></center>
+    <hr>
+    <div class="container group">
+    <div class="grid-1-5" style = "background-image:url(el.jpg);background-size:100%100%">
+      <h3><span class="uppercase">File Your Electricity Related Complaints Here</span></h3>
+      <a href="dhh.html" class="button">FILE</a>
+    </div>
+    <div class="grid-1-5" style = "background-image:url(road.jpg);background-size:100%100%">
+      <h3><span class="uppercase">File Your Road Related Complaints Here</span></h3>   
+      <a href="" class="button">File</a> 
+    </div>
+    <div class="grid-1-5"  style = "background-image:url(wa.jpg);background-size:100%100%">
+      <h3><span class="uppercase">File Your Water Related Complaints Here</span></h3> 
+      <a href="" class="button">File</a>   
+    </div>
+    <div class="grid-1-5"  style = "background-image:url(ga.jpg);background-size:100%100%">
+      <h3><span class="uppercase">File Your Garbage Related Complaints Here</span></h3>
+      <a href="" class="button">File</a>   
+    </div>
+    <div class="grid-1-5" style = "background-image:url(dr.jpg);background-size:100%100%">
+      <h3><span class="uppercase">File Your Drainage Related Complaints Here</span></h3>
+      <a href="" class="button">File</a>
+    </div>    
+  </div>
+</body>
+  <div class="container"> </div>
+<hr>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../Users/dharanesh/Documents/js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../Users/dharanesh/Documents/js/bootstrap.js"></script>
+</body>
+</html>

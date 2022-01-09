@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Google Maps Example</title>
+        <style type="text/css">
+            body { font: normal 14px Verdana; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+            #sidebar { float: right; width: 30%; }
+            #main { padding-right: 15px; }
+            .infoWindow { width: 220px; }
+        </style>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQeG4w9yKqxxZhmlRZROdUZSw4HexMTtw&callback=initMap"
+  type="text/javascript"></script>
+        <script type="text/javascript">
+     
+         
+        var map;
+         
+       
+        var center = new google.maps.LatLng(11.100787, 77.378051);
+         
+        function init() {
+             
+            var mapOptions = {
+                zoom: 13,
+                center: center,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+             
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+             
+            var marker = new google.maps.Marker({
+                map: map, 
+                position: center,
+            });
+        }
+        //]]>
+        </script>
+    </head>
+    <body onload="init();">
+         
+        <h1>Places to check out in Tiruppur</h1> 
+        <section id="main">
+            <div id="map_canvas" style="width: 70%; height: 500px;"></div>
+        </section>
+         
+    </body>
+</html>
